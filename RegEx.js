@@ -1,11 +1,11 @@
-let PincodeAlpha = 'A400088';
-let pinRegex = RegExp('^[A-Z][1-9][0-9]{5}$');
-let pinCheck = pinRegex.test(PincodeAlpha);
+let PincodeWithoutAlphaSplCharacter = '400088B';
+let pinRegex = RegExp('^[1-9][0-9]{5}$');
+let pinCheck = pinRegex.test(PincodeWithoutAlphaSplCharacter);
 if (pinCheck == true)
 {
-    console.log("Regex Passed for Pincode: " + PincodeAlpha);
+    console.log("Regex Passed for Pincode: " + PincodeWithoutAlphaSplCharacter);
 }
 else 
 {
-    console.log("Regex Failed for PinCode:" + PincodeAlpha)
+    console.log("Regex Failed for PinCode:" + PincodeWithoutAlphaSplCharacter)
 }
